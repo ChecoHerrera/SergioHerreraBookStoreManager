@@ -1,0 +1,16 @@
+<div class="main">
+  <h1>
+    Category Admin
+  </h1>
+  <div class="myInputs">
+    <label>Category Id</label>
+    <input type="number" (input)='onIdEnter($event)' />
+  </div>
+  <div class="myInputs">
+    <label>Category Name</label>
+    <input type="text" (input)='onNameEnter($event)' />
+  </div>
+  <div class="myInputs">
+    <input type="buttom" value="ADD" class="btnAdd" (click)="onAddCategory()" />
+  </div>
+</div>

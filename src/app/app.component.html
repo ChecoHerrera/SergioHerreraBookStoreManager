@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="cf">
+  <div class="left">
+    <app-book-admin [categories]='categories'></app-book-admin>
+  </div>
+  <div class="left">
+    <app-category-admin (sendCategories)='receivedCategories($event)'></app-category-admin>
+  </div>
+</div>

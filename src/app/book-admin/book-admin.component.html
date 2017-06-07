@@ -1,0 +1,33 @@
+<div class="main">
+  <h1>
+    Book Admin
+  </h1>
+  <div class="myInputs">
+    <label>Book Id</label>
+    <input type="text" />
+  </div>
+  <div class="myInputs">
+    <label>Book Name</label>
+    <input type="text" />
+  </div>
+  <div class="myInputs">
+    <label>Author</label>
+    <input type="text" />
+  </div>
+  <div class="myInputs">
+    <label>Book Category</label>
+    <select>
+      <option disabled="disabled">Select Options</option>
+      <option *ngFor='let category of categories' value="{{category.id}}">
+    {{category.name}}
+  </option>
+    </select>
+  </div>
+  <div class="myInputs">
+    <label>Price</label>
+    <input type="text" />
+  </div>
+  <div class="myInputs">
+    <input type="buttom" value="ADD" class="btnAdd" />
+  </div>
+</div>
